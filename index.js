@@ -207,7 +207,7 @@ run().catch(console.dir)
 
 
 app.get('/', (req, res) => {
-    res.send('Running p-hero-team server')
+    res.send('Running mobileHut server')
 
 });
 app.listen(port, () => {
