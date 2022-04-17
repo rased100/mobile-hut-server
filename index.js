@@ -36,7 +36,7 @@ async function run() {
         await client.connect();
         console.log('database connected successfully');
         // const database = client.db('pheroteam');
-        const database = client.db('MobileHut');
+        const database = client.db('Mobile_info');
         const itemsCollection = database.collection('items');
         const orderCollection = database.collection('order');
         const reviewCollection = database.collection('review');
@@ -207,7 +207,7 @@ run().catch(console.dir)
 
 
 app.get('/', (req, res) => {
-    res.send('Running mobileHut server')
+    res.send('Running mobile-info server')
 
 });
 app.listen(port, () => {
